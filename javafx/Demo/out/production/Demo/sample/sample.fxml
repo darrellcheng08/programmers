@@ -1,0 +1,10 @@
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<HBox fx:controller="sample.Controller"
+      xmlns:fx="http://javafx.com/fxml" alignment="CENTER_LEFT">
+    <VBox style="-fx-background-color : cyan" fx:id="drawer">
+        <Button text="Button 1" onAction="#hide"/>
+    </VBox>
+    <Button text="Show" onAction="#show"/>
+</HBox>
