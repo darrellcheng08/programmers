@@ -1,0 +1,13 @@
+G:\Gavi - C#\BinufuPractice\BinufuPractice\bin\Debug\BinufuPractice.exe.config
+G:\Gavi - C#\BinufuPractice\BinufuPractice\bin\Debug\BinufuPractice.exe
+G:\Gavi - C#\BinufuPractice\BinufuPractice\bin\Debug\BinufuPractice.pdb
+G:\Gavi - C#\BinufuPractice\BinufuPractice\obj\Debug\BinufuPractice.Form1.resources
+G:\Gavi - C#\BinufuPractice\BinufuPractice\obj\Debug\BinufuPractice.Properties.Resources.resources
+G:\Gavi - C#\BinufuPractice\BinufuPractice\obj\Debug\BinufuPractice.csproj.GenerateResource.Cache
+G:\Gavi - C#\BinufuPractice\BinufuPractice\obj\Debug\BinufuPractice.exe
+G:\Gavi - C#\BinufuPractice\BinufuPractice\obj\Debug\BinufuPractice.pdb
+G:\Gavi - C#\BinufuPractice\BinufuPractice\bin\Debug\Bunifu_UI_v1.5.3.dll
+G:\Gavi - C#\BinufuPractice\BinufuPractice\obj\Debug\BinufuPractice.csprojResolveAssemblyReference.cache
+G:\Gavi - C#\BinufuPractice\BinufuPractice\bin\Debug\MetroFramework.Design.dll
+G:\Gavi - C#\BinufuPractice\BinufuPractice\bin\Debug\MetroFramework.dll
+G:\Gavi - C#\BinufuPractice\BinufuPractice\bin\Debug\MetroFramework.Fonts.dll
