@@ -1,0 +1,602 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E3DA9767-2AD4-425B-B45A-B443647CAB7E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Enrollment_System</RootNamespace>
+    <AssemblyName>Enrollment System</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlServerCe, Version=3.5.1.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Accept_Payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accept_Payment.Designer.cs">
+      <DependentUpon>Accept_Payment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddTeacher_Subject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddTeacher_Subject.Designer.cs">
+      <DependentUpon>AddTeacher_Subject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AuditTrail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AuditTrail.Designer.cs">
+      <DependentUpon>AuditTrail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Change_Password1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Change_Password1.Designer.cs">
+      <DependentUpon>Change_Password1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Change_Password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Change_Password.Designer.cs">
+      <DependentUpon>Change_Password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class_Advisory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Class_Advisory.Designer.cs">
+      <DependentUpon>Class_Advisory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Collectibles_And_Balances.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Collectibles_And_Balances.Designer.cs">
+      <DependentUpon>Collectibles_And_Balances.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Credencial_Info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Credencial_Info.Designer.cs">
+      <DependentUpon>Credencial_Info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Encoding_Grades_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Encoding_Grades_Form.Designer.cs">
+      <DependentUpon>Encoding_Grades_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Encoding_Of_Grades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Encoding_Of_Grades.Designer.cs">
+      <DependentUpon>Encoding_Of_Grades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="List_New_Student.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="List_New_Student.Designer.cs">
+      <DependentUpon>List_New_Student.cs</DependentUpon>
+    </Compile>
+    <Compile Include="List_Of_Enrolled_Students.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="List_Of_Enrolled_Students.Designer.cs">
+      <DependentUpon>List_Of_Enrolled_Students.cs</DependentUpon>
+    </Compile>
+    <Compile Include="List_Teacher_Subject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="List_Teacher_Subject.Designer.cs">
+      <DependentUpon>List_Teacher_Subject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Log_Trail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Log_Trail.Designer.cs">
+      <DependentUpon>Log_Trail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main_Form.Designer.cs">
+      <DependentUpon>Main_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Male_Female_per_Class.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Male_Female_per_Class.Designer.cs">
+      <DependentUpon>Male_Female_per_Class.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage_Fees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage_Fees.Designer.cs">
+      <DependentUpon>Manage_Fees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage_User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage_User.Designer.cs">
+      <DependentUpon>Manage_User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModeOfPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModeOfPayment.Designer.cs">
+      <DependentUpon>ModeOfPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="New_Enrollment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New_Enrollment.Designer.cs">
+      <DependentUpon>New_Enrollment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payment_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payment_List.Designer.cs">
+      <DependentUpon>Payment_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Population_Per_SY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Population_Per_SY.Designer.cs">
+      <DependentUpon>Population_Per_SY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Room.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Room.Designer.cs">
+      <DependentUpon>Room.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Schedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Schedule.Designer.cs">
+      <DependentUpon>Schedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SchoolYear.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SchoolYear.Designer.cs">
+      <DependentUpon>SchoolYear.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search_Student_Ready_to_Enroll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search_Student_Ready_to_Enroll.Designer.cs">
+      <DependentUpon>Search_Student_Ready_to_Enroll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search_Teacher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search_Teacher.Designer.cs">
+      <DependentUpon>Search_Teacher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search_Teacher_Encode_Grade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search_Teacher_Encode_Grade.Designer.cs">
+      <DependentUpon>Search_Teacher_Encode_Grade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Section.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Section.Designer.cs">
+      <DependentUpon>Section.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Select_Teacher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Select_Teacher.Designer.cs">
+      <DependentUpon>Select_Teacher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Set_Active.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Set_Active.Designer.cs">
+      <DependentUpon>Set_Active.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student_Credential.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student_Credential.Designer.cs">
+      <DependentUpon>Student_Credential.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student_Grades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student_Grades.Designer.cs">
+      <DependentUpon>Student_Grades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student_Ledger_Account.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student_Ledger_Account.Designer.cs">
+      <DependentUpon>Student_Ledger_Account.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student_Profile_Entry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student_Profile_Entry.Designer.cs">
+      <DependentUpon>Student_Profile_Entry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Subject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Subject.Designer.cs">
+      <DependentUpon>Subject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Teachers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teachers.Designer.cs">
+      <DependentUpon>Teachers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YearLevel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YearLevel.Designer.cs">
+      <DependentUpon>YearLevel.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Accept_Payment.resx">
+      <DependentUpon>Accept_Payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddTeacher_Subject.resx">
+      <DependentUpon>AddTeacher_Subject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuditTrail.resx">
+      <DependentUpon>AuditTrail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Change_Password.resx">
+      <DependentUpon>Change_Password.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Change_Password1.resx">
+      <DependentUpon>Change_Password1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Class_Advisory.resx">
+      <DependentUpon>Class_Advisory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Collectibles_And_Balances.resx">
+      <DependentUpon>Collectibles_And_Balances.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Credencial_Info.resx">
+      <DependentUpon>Credencial_Info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Encoding_Grades_Form.resx">
+      <DependentUpon>Encoding_Grades_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Encoding_Of_Grades.resx">
+      <DependentUpon>Encoding_Of_Grades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="List_New_Student.resx">
+      <DependentUpon>List_New_Student.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="List_Of_Enrolled_Students.resx">
+      <DependentUpon>List_Of_Enrolled_Students.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="List_Teacher_Subject.resx">
+      <DependentUpon>List_Teacher_Subject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Log_Trail.resx">
+      <DependentUpon>Log_Trail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main_Form.resx">
+      <DependentUpon>Main_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Male_Female_per_Class.resx">
+      <DependentUpon>Male_Female_per_Class.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage_Fees.resx">
+      <DependentUpon>Manage_Fees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage_User.resx">
+      <DependentUpon>Manage_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModeOfPayment.resx">
+      <DependentUpon>ModeOfPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New_Enrollment.resx">
+      <DependentUpon>New_Enrollment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment_List.resx">
+      <DependentUpon>Payment_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Population_Per_SY.resx">
+      <DependentUpon>Population_Per_SY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Room.resx">
+      <DependentUpon>Room.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Schedule.resx">
+      <DependentUpon>Schedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SchoolYear.resx">
+      <DependentUpon>SchoolYear.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search_Student_Ready_to_Enroll.resx">
+      <DependentUpon>Search_Student_Ready_to_Enroll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search_Teacher.resx">
+      <DependentUpon>Search_Teacher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search_Teacher_Encode_Grade.resx">
+      <DependentUpon>Search_Teacher_Encode_Grade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Section.resx">
+      <DependentUpon>Section.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Select_Teacher.resx">
+      <DependentUpon>Select_Teacher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Set_Active.resx">
+      <DependentUpon>Set_Active.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student_Credential.resx">
+      <DependentUpon>Student_Credential.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student_Grades.resx">
+      <DependentUpon>Student_Grades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student_Ledger_Account.resx">
+      <DependentUpon>Student_Ledger_Account.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student_Profile_Entry.resx">
+      <DependentUpon>Student_Profile_Entry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Subject.resx">
+      <DependentUpon>Subject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teachers.resx">
+      <DependentUpon>Teachers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YearLevel.resx">
+      <DependentUpon>YearLevel.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\132.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agapelogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settingsIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Administrative_Tools.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\header-pay-rool-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_0001_forms-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\advisory.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %289%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yearlevel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\schoolyear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ACTIVE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cliftons-services-icons-conference-rooms %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\staff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %287%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addteachersubject.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cashier.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list-teacher.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Restore database.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\change Pass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\manageUser1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\About.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users-man-woman-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view-schedule.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Backup database.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\advising-icon-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %287%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Encoding.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_credentials.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images51.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %286%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Balances payment.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Payment lIST.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %289%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Student Ledger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %285%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SQL.Server.Compact.3.5">
+      <Visible>False</Visible>
+      <ProductName>SQL Server Compact 3.5 SP2</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
